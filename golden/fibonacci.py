@@ -1,0 +1,20 @@
+import math
+
+
+def loop_fib(n):
+    a, b = 0, 1
+    for _ in range(n):
+        a, b = b, a+b 
+        # f(x) = a + b ---> f(x+1) = b + f(x)
+        # a and b are always de last 2 numbers in de sequence. S = [..., a, b, f(x)]
+        # a = f(n) and b = f(n+1)
+    return a
+
+def main():
+    n = int(input("n: "))
+    result = (loop_fib(n))
+    print(result)
+
+
+if __name__ == "__main__":
+    main()
