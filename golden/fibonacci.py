@@ -10,6 +10,10 @@ def loop_fib(n):
         # a = f(n) and b = f(n+1)
     return a
 
+def recursive_fib(n):
+    if n == 0 or n == 1:
+        return 
+
 def main():
     n = int(input("n: "))
     result = (loop_fib(n))
