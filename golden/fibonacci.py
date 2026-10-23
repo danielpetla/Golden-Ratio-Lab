@@ -11,12 +11,13 @@ def loop_fib(n):
     return a
 
 def recursive_fib(n):
-    if n == 0 or n == 1:
-        return 
+    if n == 0: return 0
+    if n == 1: return 1
+    return recursive_fib(n-1) + recursive_fib(n-2 )
 
 def main():
     n = int(input("n: "))
-    result = (loop_fib(n))
+    result = (recursive_fib(n))
     print(result)
 
 
